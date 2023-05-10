@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ça Roule !</title>
+
+    <!-- Ajustement de la taille du viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importation de la police d'icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Intégration des feuille de styles CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Entête de la Page: logo et menu burger -->
+    <header id="haut">
+        <!-- Icône du menu-->
+        <span class="material-icons icone-logo">pedal_bike</span>
+        <!-- Barre blanche du menu -->
+        <div id="barre">
+            <input type="checkbox" id="cc-menu">
+            <div class="conteneur-bouton">
+                <label for="cc-menu" class="btn-burger">
+                    <div class="ligne ligne1"></div>
+                    <div class="ligne ligne2"></div>
+                    <div class="ligne ligne3"></div>
+                </label>
+            </div>
+            <!-- Menu-->
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#structure">Structure</a>
+                <a href="#epreuve">Épreuve</a>
+                <a href="#catalogue">Catalogue</a>
+                <a href="#bas">Sources</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenu Principal: 4 sections -->
+    <main>
+        <section id="accueil">
+            <!-- Titre -->
+            <h1>Ça Roule !</h1>
+            <div>
+                <p>Clovis Gauthier</p>
+                <p>TIM, Hiver 2023</p>
+            </div>
+        </section>
+        <section id="structure">
+            <h1>Structure</h1>
+            <div class="apparition">
+                <!-- Éléments qui apparaissent en défilant -->
+                <p>
+                    Chaque vélo est composé d'un cadre,<br>
+                    d'une paire de roues accompagnées de freins,<br>
+                    ainsi que d'un indispensable guidon.
+                </p>
+                <!-- Traits et "Étiquettes" -->
+                <p>Roue avant</p>
+                <div class="trait trait-mobile traitRoue"></div>
+                <p>Freins</p>
+                <div class="trait trait-mobile traitFreins"></div>
+                <p>Guidon</p>
+                <div class="trait trait-mobile traitGuidon"></div>
+                <!-- <span class="material-icons">directions_bike</span> -->
+                <div class="deplacementVelo">
+                    <div class="spriteVelo"></div>
+                </div>
+            </div>
+        </section>
+        <section id="epreuve">
+            <div>
+                <h1>Épreuve</h1>
+                <p>
+                    Inauguré en 1978, le circuit Gilles Villeneuve acceuille annuellement le prestigieux Grand Prix du Canada.<br>C'est le site parfait pour pratiquer le cyclisme à haute vitesse.
+                </p>
+                <p>
+                    Votre but est de compléter le plus de tours possible en 10 minutes. 
+                </p>
+                <span class="material-icons">timer</span>
+                <!-- Informartions apparaissant lorsqu'on survole le chronomètre -->
+                <p>
+                    Les F1 atteignent les 300km/h!
+                    Saurez-vous faire de même?
+                </p>  
+                <img src="images/circuit_gilles_villeneuve.png" alt="Silhouette du circuit Gilles Villeneuve">
+            </div>
+        </section>
+        <section id="catalogue">
+            <h1>Catalogue</h1>
+            <p>
+                Trouvez votre nouvelle monture dès aujourd'hui!
+            </p>
+            <!-- Diaporama qui défile horizontalement -->
+            <div class="diaporama"></div>
+        </section>
+    </main>
+    <!-- Pied de la Page: références et bouton -->
+    <footer id="bas">
+            <div class="sources">
+                <h4>Sources</h4>
+                <!-- "Boutons" et accéder aux sources -->
+                <a href="https://www.pexels.com/fr-fr/chercher/bike/">Images</a>
+                <a href="https://www.tinyurl.com/55dxyxxu">Silhouette Circuit(modifié)</a>
+            </div>
+            <div>
+                <!-- Flèche pour revenir au haut de la page -->
+                <a href="#haut">
+                    <span class="material-icons icone-footer">north</span>
+                </a>
+        </div>
+    </footer>
+
+    <!-- Intégration du fichier JavaScript -->
+    <script src="js/index.js"></script>
+</body>
+</html>
